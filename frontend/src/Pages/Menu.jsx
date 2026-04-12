@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { API } from '../api';
 import Set from "./Set";
 
 function Menu() {
@@ -34,7 +34,7 @@ function Menu() {
     setTotal(totalAmount);
 
     try {
-      await axios.post("http://localhost:9999/order", {
+      await API.post("/order", {
         items: billItems.join(", "),
         total: totalAmount
       });

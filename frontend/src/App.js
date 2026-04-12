@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Contect from './Pages/Contact';
+import Contact from './Pages/Contact';
 import Header from './Pages/Header';
 import Menu from './Pages/Menu';
 import Footer from './Pages/Footer';
@@ -26,7 +26,7 @@ function Layout() {
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/home' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>
-        <Route path='/contect' element={<Contect/>}></Route>
+        <Route path='/contact' element={<Contact/>}></Route>
         <Route path='/menu' element={<Menu/>}></Route>
       </Routes>
 

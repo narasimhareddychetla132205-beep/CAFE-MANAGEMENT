@@ -8,8 +8,8 @@ import cors from "cors";
 dotenv.config();
 
 const app = express();
-const PORT = 9999;
-const SECRET = "abc123";
+const PORT = process.env.PORT || 9999;
+const SECRET = process.env.SECRET || "abc123";
 
 app.use(express.json());
 app.use(cors());
