@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 9999;
 const SECRET = process.env.SECRET || "abc123";
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_URL || "http://localhost:3000",
+  credentials: true
+}));
 
 mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log("Database Connected"))
