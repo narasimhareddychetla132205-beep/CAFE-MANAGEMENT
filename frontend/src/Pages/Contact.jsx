@@ -1,5 +1,7 @@
 import React from 'react'
 
+import React from 'react'
+
 function Contact(){
   return(
     <div style={{padding:"20px", backgroundColor: "#f9f9f9", minHeight: "100vh"}}>

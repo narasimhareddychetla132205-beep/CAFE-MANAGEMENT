@@ -71,7 +71,7 @@ function Menu() {
             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDb2bcdwcWVSP6B0ZkLUYDft1sj4OoMhXjJQ&s' alt=''/>
              <h3>Lemon Tea</h3>
             <h4>price ₹ 15/-</h4>
-            <Set onChange={(qty)=>updateCart("Milkshake",15,qty)} />
+            <Set onChange={(qty)=>updateCart("Lemon Tea",15,qty)} />
           </div>
         </div>
          <div className='a'>
@@ -121,7 +121,7 @@ function Menu() {
             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5mxPW-2W_xvjQBjAAn4Go4OGQVlTpCAU4nA&s' alt=''/>
             <h3>Veg Sandwich</h3>
             <h4>₹30</h4>
-            <Set onChange={(qty)=>updateCart("Sandwich",30,qty)} />
+            <Set onChange={(qty)=>updateCart("Veg Sandwich",30,qty)} />
           </div>
 
           <div className='b'>
