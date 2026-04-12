@@ -1,8 +1,11 @@
+import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import cors from "cors";
+
+dotenv.config();
 
 const app = express();
 const PORT = 9999;
@@ -11,7 +14,7 @@ const SECRET = "abc123";
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/cafeDB")
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log("Database Connected"))
 .catch(err => console.log(err));
 
