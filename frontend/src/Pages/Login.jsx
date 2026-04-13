@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { API } from '../api';
 
 function Login() {
@@ -53,7 +53,7 @@ function Login() {
 
           <p>{error}</p>
 
-          <p>New user? <a href="/register">Register</a></p>
+          <p>New user? <Link to="/register">Register</Link></p>
 
         </fieldset>
       </form>
